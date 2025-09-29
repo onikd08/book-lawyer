@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "registrationNumber": "LAW-1001",
+    "name": "Aarav Mehta",
+    "experience": "12 years",
+    "speciality": "Criminal Law",
+    "fee": 250,
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 2,
+    "registrationNumber": "LAW-1002",
+    "name": "Sophia Khan",
+    "experience": "8 years",
+    "speciality": "Corporate Law",
+    "fee": 300,
+    "availability": ["Tuesday", "Thursday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 3,
+    "registrationNumber": "LAW-1003",
+    "name": "Rohan Iyer",
+    "experience": "15 years",
+    "speciality": "Family Law",
+    "fee": 200,
+    "availability": ["Monday", "Tuesday", "Friday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 4,
+    "registrationNumber": "LAW-1004",
+    "name": "Emily Fernandes",
+    "experience": "10 years",
+    "speciality": "Immigration Law",
+    "fee": 280,
+    "availability": ["Wednesday", "Saturday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 5,
+    "registrationNumber": "LAW-1005",
+    "name": "Kabir Sharma",
+    "experience": "7 years",
+    "speciality": "Intellectual Property",
+    "fee": 350,
+    "availability": ["Monday", "Thursday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 6,
+    "registrationNumber": "LAW-1006",
+    "name": "Isabella D’Souza",
+    "experience": "9 years",
+    "speciality": "Tax Law",
+    "fee": 275,
+    "availability": ["Tuesday", "Friday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 7,
+    "registrationNumber": "LAW-1007",
+    "name": "Arjun Patel",
+    "experience": "20 years",
+    "speciality": "Constitutional Law",
+    "fee": 400,
+    "availability": ["Monday", "Wednesday", "Friday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 8,
+    "registrationNumber": "LAW-1008",
+    "name": "Maya Nair",
+    "experience": "6 years",
+    "speciality": "Environmental Law",
+    "fee": 220,
+    "availability": ["Thursday", "Saturday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  },
+  {
+    "id": 9,
+    "registrationNumber": "LAW-1009",
+    "name": "Vikram Deshmukh",
+    "experience": "14 years",
+    "speciality": "Cyber Law",
+    "fee": 320,
+    "availability": ["Tuesday", "Thursday", "Friday"],
+    "image": "https://i.postimg.cc/6QGdVfGt/lawyer.png"
+  }
+]

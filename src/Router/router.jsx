@@ -4,6 +4,7 @@ import Home from "../pages/Home/Home";
 import MyBookings from "../pages/MyBookings/MyBookings";
 import Contact from "../pages/Contact/Contact";
 import Blogs from "../pages/Blogs/Blogs";
+import LawyerDetails from "../pages/LawyerDetails/LawyerDetails";
 
 export const router = createBrowserRouter([
   {
@@ -13,6 +14,7 @@ export const router = createBrowserRouter([
       {
         Component: Home,
         index: true,
+        loader: () => fetch("/fakedata.json"),
       },
       {
         path: "myBookings",
@@ -25,6 +27,11 @@ export const router = createBrowserRouter([
       {
         path: "blogs",
         Component: Blogs,
+      },
+      {
+        path: "lawyerDetails/:id",
+        Component: LawyerDetails,
+        loader: () => fetch("/fakedata.json"),
       },
     ],
   },
