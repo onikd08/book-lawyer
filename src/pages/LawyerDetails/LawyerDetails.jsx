@@ -1,7 +1,9 @@
-import { useLoaderData, useParams } from "react-router";
+import { useLoaderData, useNavigate, useParams } from "react-router";
+import { saveDataOnLocalStorage } from "../../utils/localStorage";
+import { toast } from "react-toastify";
 
 const LawyerDetails = () => {
-  const data = useLoaderData();
+  const data = useLoaderData() || [];
   const { id } = useParams();
   const lawyerId = parseInt(id);
   const lawyer = data.find((item) => item.id === lawyerId);
@@ -14,6 +16,18 @@ const LawyerDetails = () => {
     availability,
     fee,
   } = lawyer;
+
+  const navigate = useNavigate();
+
+  const handleBooking = (id) => {
+    const isStored = saveDataOnLocalStorage(id);
+    if (isStored) {
+      toast.success("Booking saved successfully 🎉");
+      navigate("/myBookings");
+    } else {
+      toast.warn("This booking already exists!");
+    }
+  };
 
   return (
     <div className="max-w-4xl mx-auto">
@@ -44,8 +58,10 @@ const LawyerDetails = () => {
             ))}
           </p>
           <p>Consultation Fee: ${fee}</p>
-          <button className="btn btn-full btn-outline btn-success">
-            {" "}
+          <button
+            onClick={() => handleBooking(lawyerId)}
+            className="btn btn-full btn-outline btn-success"
+          >
             Book an appointment
           </button>
         </div>

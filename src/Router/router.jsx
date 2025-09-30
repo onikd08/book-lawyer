@@ -5,11 +5,14 @@ import MyBookings from "../pages/MyBookings/MyBookings";
 import Contact from "../pages/Contact/Contact";
 import Blogs from "../pages/Blogs/Blogs";
 import LawyerDetails from "../pages/LawyerDetails/LawyerDetails";
+import ErrorPage from "../pages/ErrorPage/ErrorPage";
+import ErrorLawyer from "../pages/ErrorPage/ErrorLawyer";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: Root,
+    errorElement: <ErrorPage />,
     children: [
       {
         Component: Home,
@@ -19,6 +22,7 @@ export const router = createBrowserRouter([
       {
         path: "myBookings",
         Component: MyBookings,
+        loader: () => fetch("/fakedata.json"),
       },
       {
         path: "contact",
@@ -31,6 +35,7 @@ export const router = createBrowserRouter([
       {
         path: "lawyerDetails/:id",
         Component: LawyerDetails,
+        errorElement: <ErrorLawyer />,
         loader: () => fetch("/fakedata.json"),
       },
     ],

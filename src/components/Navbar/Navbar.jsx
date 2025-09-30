@@ -1,4 +1,4 @@
-import { NavLink } from "react-router";
+import { Link, NavLink } from "react-router";
 import "./Navbar.css";
 import logo from "../../assets/logo-footer.png";
 
@@ -67,7 +67,9 @@ const Navbar = () => {
           </ul>
         </div>
         <img src={logo} alt="" />
-        <a className="btn btn-ghost text-xl">lawyer-BD</a>
+        <Link to={"/"} className="btn btn-ghost text-xl">
+          lawyer-BD
+        </Link>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">{links}</ul>
