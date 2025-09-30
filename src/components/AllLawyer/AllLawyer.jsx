@@ -7,7 +7,7 @@ const AllLawyer = () => {
   return (
     <>
       <div className="max-w-3xl mx-auto text-center my-15">
-        <h1 className="text-3xl"> Our Best Lawyers</h1>
+        <h1 className="text-3xl mb-5"> Our Best Lawyers</h1>
         <p>
           Our platform connects you with verified, experienced Lawyers across
           various specialties — all at your convenience. Whether it's a routine
